@@ -59,7 +59,7 @@ name = "FEI Ragbot"
 # description = ""
 
 # Large size content are by default collapsed for a cleaner ui
-default_collapse_content = true
+default_collapse_content = false
 
 # Chain of Thought (CoT) display mode. Can be "hidden", "tool_call" or "full".
 cot = "hidden"
@@ -69,7 +69,7 @@ cot = "hidden"
 
 # Specify a CSS file that can be used to customize the user interface.
 # The CSS file can be served from the public directory or via an external link.
-# custom_css = "/public/test.css"
+ custom_css = "/public/stylesheet.css"
 
 # Specify a Javascript file that can be used to customize the user interface.
 # The Javascript file can be served from the public directory.
@@ -92,16 +92,19 @@ cot = "hidden"
     #font_family = "Inter, sans-serif"
 # Override default MUI light theme. (Check theme.ts)
 [UI.theme.light]
-    background = "#E6EBF6"
-    paper = "#F0F2F6"
+    background = "#F0F4FF"  # A softer light blue background for better contrast and readability
+    paper = "#FFFFFF"       # White paper color for clarity and to keep it distinct from the primary color
 
     [UI.theme.light.primary]
-        main = "#0039A6"
-        dark = "#F0F2F6"
-        light = "#FFE7EB"
+        main = "#0039A6"        # Base color remains unchanged
+        dark = "#00277A"        # A darker shade of the base color for elements like buttons or text on hover
+        light = "#4C7FC2"       # A lighter version of the base color for highlights or secondary elements
+
     [UI.theme.light.text]
-        primary = "#262730"
-        secondary = "#616161"
+        primary = "#0039A6"     # Base color for primary text to maintain consistency
+        secondary = "#4C7FC2"   # A lighter shade of blue for secondary text, offering subtle contrast
+
+
 
 # Override default MUI dark theme. (Check theme.ts)
 [UI.theme.dark]

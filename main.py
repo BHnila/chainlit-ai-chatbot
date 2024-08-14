@@ -32,7 +32,6 @@ ice_cream_assistant_prompt_template = PromptTemplate(
 
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
-
 @cl.on_chat_start
 def quey_llm():
     llm = OpenAI(model='gpt-3.5-turbo-instruct',
