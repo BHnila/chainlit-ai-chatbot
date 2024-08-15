@@ -1,0 +1,6 @@
+chainlit
+langchain
+langchain-community
+langchain-openai
+asyncpg
+sqlalchemy[asyncio]
