@@ -23,6 +23,8 @@ services:
       - .env
     environment:
       - POSTGRES_CONNINFO=postgresql+asyncpg://chainlit:chainlitdbpass@postgres:5432/chainlitdb
+      # Secret just for demo puposes, never put auth secret here ! Use .env file
+      - CHAINLIT_AUTH_SECRET=_T=HE_XfnNipq~j^F,:aRjZMr=T:YN,SOY^fdlOTVyrqXT_VITNACoismx1gf_uB
     ports:
       - 8000:8000
     depends_on:
